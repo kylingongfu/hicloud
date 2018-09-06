@@ -1,6 +1,8 @@
 package com.zhang.product.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
@@ -10,6 +12,8 @@ public class ProductInfo {
 
     @Id
     private String productId;
+
+    @JsonProperty("name")
     private String productName;
     private BigDecimal productPrice;
     private long productStock;

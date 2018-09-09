@@ -29,4 +29,13 @@ public class ProductService {
     public List<ProductInfo> productInfoListByStatus(long status){
         return dao.findAllByProductStatus(status);
     }
+
+    /**
+     * 根据商品id查询给定范围的商品信息
+     * @param productIds
+     * @return
+     */
+    public List<ProductInfo> listProductInfoByIds(List productIds){
+        return dao.findByProductIdIn(productIds);
+    }
 }

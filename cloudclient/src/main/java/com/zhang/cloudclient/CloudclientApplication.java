@@ -11,7 +11,7 @@ public class CloudclientApplication {
     public static void main(String[] args) {
         SpringApplication.run(CloudclientApplication.class, args);
         try {
-            Thread.sleep(30*1000);
+            Thread.sleep(30 * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

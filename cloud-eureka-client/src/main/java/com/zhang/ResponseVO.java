@@ -1,7 +1,7 @@
 package com.zhang;
 
 public class ResponseVO {
-    private String status="0";
+    private String status = "0";
     private String msg;
 
     public String getMsg() {

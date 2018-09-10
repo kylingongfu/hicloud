@@ -17,13 +17,13 @@ public class ProductController {
     ProductService service;
 
     @RequestMapping("/list")
-    public ResponseVO productList(){
+    public ResponseVO productList() {
         List list = service.productInfoList();
         return ResponseUtil.success(list);
     }
 
     @RequestMapping("/list/{status}")
-    public ResponseVO productListByStatus(@PathVariable Long status){
+    public ResponseVO productListByStatus(@PathVariable Long status) {
         List list = service.productInfoListByStatus(status);
         return ResponseUtil.success(list);
     }

@@ -3,75 +3,75 @@ package com.zhang.cloudclient.entity;
 
 public class UserInfo {
 
-  private String id;
-  private String username;
-  private String password;
-  private String openid;
-  private long role;
-  private java.sql.Timestamp createTime;
-  private java.sql.Timestamp updateTime;
+    private String id;
+    private String username;
+    private String password;
+    private String openid;
+    private long role;
+    private java.sql.Timestamp createTime;
+    private java.sql.Timestamp updateTime;
 
 
-  public String getId() {
-    return id;
-  }
+    public String getId() {
+        return id;
+    }
 
-  public void setId(String id) {
-    this.id = id;
-  }
-
-
-  public String getUsername() {
-    return username;
-  }
-
-  public void setUsername(String username) {
-    this.username = username;
-  }
+    public void setId(String id) {
+        this.id = id;
+    }
 
 
-  public String getPassword() {
-    return password;
-  }
+    public String getUsername() {
+        return username;
+    }
 
-  public void setPassword(String password) {
-    this.password = password;
-  }
-
-
-  public String getOpenid() {
-    return openid;
-  }
-
-  public void setOpenid(String openid) {
-    this.openid = openid;
-  }
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
 
-  public long getRole() {
-    return role;
-  }
+    public String getPassword() {
+        return password;
+    }
 
-  public void setRole(long role) {
-    this.role = role;
-  }
-
-
-  public java.sql.Timestamp getCreateTime() {
-    return createTime;
-  }
-
-  public void setCreateTime(java.sql.Timestamp createTime) {
-    this.createTime = createTime;
-  }
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
 
-  public java.sql.Timestamp getUpdateTime() {
-    return updateTime;
-  }
+    public String getOpenid() {
+        return openid;
+    }
 
-  public void setUpdateTime(java.sql.Timestamp updateTime) {
-    this.updateTime = updateTime;
-  }
+    public void setOpenid(String openid) {
+        this.openid = openid;
+    }
+
+
+    public long getRole() {
+        return role;
+    }
+
+    public void setRole(long role) {
+        this.role = role;
+    }
+
+
+    public java.sql.Timestamp getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(java.sql.Timestamp createTime) {
+        this.createTime = createTime;
+    }
+
+
+    public java.sql.Timestamp getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(java.sql.Timestamp updateTime) {
+        this.updateTime = updateTime;
+    }
 
 }

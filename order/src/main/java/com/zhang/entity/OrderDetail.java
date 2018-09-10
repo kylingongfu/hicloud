@@ -1,4 +1,4 @@
-package com.zhang.cloudclient.entity;
+package com.zhang.entity;
 
 
 public class OrderDetail {

@@ -29,6 +29,6 @@ public class ProductDaoTest {
     @Test
     public void findByProductIdIn() {
         List<ProductInfo> list = productDao.findByProductIdIn(Arrays.asList("157875196366160022", "164103465734242707"));
-        Assert.assertTrue(list.size()>0);
+        Assert.assertTrue(list.size() > 0);
     }
 }

@@ -1,4 +1,4 @@
-package com.zhang.entity;
+package com.zhang.order.entity;
 
 
 public class OrderMaster {

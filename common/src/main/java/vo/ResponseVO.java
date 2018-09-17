@@ -1,4 +1,4 @@
-package com.zhang;
+package vo;
 
 public class ResponseVO {
     private String status = "0";

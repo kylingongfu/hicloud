@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
+//@RestController
 public class ProductEurekaClientApplication {
 
-    @RequestMapping("/")
+    //@RequestMapping("/")
     public String home() {
         return "Hello World.";
     }

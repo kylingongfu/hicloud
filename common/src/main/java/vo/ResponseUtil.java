@@ -1,4 +1,4 @@
-package com.zhang;
+package vo;
 
 public class ResponseUtil {
     public static ResponseVO success(Object obj) {

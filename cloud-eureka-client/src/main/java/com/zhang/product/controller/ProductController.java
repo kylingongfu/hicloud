@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 import vo.ResponseUtil;
 import vo.ResponseVO;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -16,10 +18,16 @@ public class ProductController {
     @Autowired
     ProductService service;
 
+    @Autowired
+    HttpServletRequest request;
+
     @RequestMapping("/list")
     public ResponseVO productList() {
         List list = service.productInfoList();
-        return ResponseUtil.success(list);
+        HashMap<Object, Object> map = new HashMap<>();
+        map.put("host",request.getServerPort());
+        map.put("result",list);
+        return ResponseUtil.success(map);
     }
 
     @RequestMapping("/list/{status}")
